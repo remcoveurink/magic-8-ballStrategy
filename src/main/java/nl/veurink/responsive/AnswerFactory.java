@@ -1,4 +1,4 @@
-package nl.veurink.translated;
+package nl.veurink.responsive;
 
 import java.util.Locale;
 
@@ -8,10 +8,10 @@ public class AnswerFactory {
         AnswerStrategy strategy;
         switch (Locale.getDefault().getLanguage()) {
             case "EN":
-                strategy = new EnglishAnswerStrategy();
+                strategy = new ResponsiveStrategy(new EnglishAnswerStrategy());
                 break;
             default:
-                strategy = new DutchAnswerStrategy();
+                strategy = new ResponsiveStrategy(new DutchAnswerStrategy());
                 break;
         }
         return strategy;

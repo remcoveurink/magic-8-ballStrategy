@@ -1,11 +1,12 @@
-package nl.veurink.translated;
+package nl.veurink.responsive;
 
 import java.util.Random;
 import java.util.Scanner;
 
 public class Magic8Ball {
     public static void main(String[] args) {
-        AnswerStrategy answerStrategy = new DutchAnswerStrategy();
+        AnswerFactory answerFactory = new AnswerFactory();
+        AnswerStrategy answerStrategy = answerFactory.createAnswerStrategyBasedOnLocale();
         Scanner myObj = new Scanner(System.in);
         System.out.println(answerStrategy.getQuestion());
 
@@ -14,10 +15,7 @@ public class Magic8Ball {
             if ("".equals(question)) {
                 System.exit(0);
             }
-
-            Random r = new Random();
-            int answers = r.nextInt(8) + 1;
-            System.out.println(answerStrategy.getAnswer(answers));
+            System.out.println(answerStrategy.getAnswer(question));
         }
     }
 }
