@@ -1,7 +1,6 @@
-package nl.veurink.translated2;
+package nl.veurink.translatedwithbase;
 
-
-public class DutchAnswerStrategy implements AnswerStrategy {
+public class DutchAnswerStrategy extends BaseAnswerStrategy {
 
     @Override
     public String getQuestion() {
@@ -9,42 +8,42 @@ public class DutchAnswerStrategy implements AnswerStrategy {
     }
 
     @Override
-    public String getItIsCertain() {
+    protected String getItIsCertain() {
         return "Het is zeker";
     }
 
     @Override
-    public String getOutlookGood() {
+    protected String getOutlookGood() {
         return "Goed vooruitzicht";
     }
 
     @Override
-    public String getYouMayRelyOnIt() {
+    protected String getYouMayRelyOnIt() {
         return "Je kunt erop vertrouwen";
     }
 
     @Override
-    public String getAskAgainLater() {
+    protected String getAskAgainLater() {
         return "Vraag later opnieuw";
     }
 
     @Override
-    public String getConcentrateAndAskAgain() {
+    protected String getConcentrateAndAskAgain() {
         return "Concentreer je en vraag opnieuw";
     }
 
     @Override
-    public String getReplyHazy() {
+    protected String getReplyHazy() {
         return "Reactie is wazig, probeer opnieuw";
     }
 
     @Override
-    public String getReplyNo() {
+    protected String getReplyNo() {
         return "Mijn antwoord is nee";
     }
 
     @Override
-    public String getMySourceSaysNo() {
+    protected String getMySourceSaysNo() {
         return "Mijn bronnen zeggen nee";
     }
 }

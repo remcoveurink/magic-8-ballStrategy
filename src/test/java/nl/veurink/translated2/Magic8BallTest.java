@@ -1,5 +1,6 @@
 package nl.veurink.translated2;
 
+import nl.veurink.translatedwithbase.Magic8Ball;
 import org.junit.Assert;
 import org.junit.Test;
 

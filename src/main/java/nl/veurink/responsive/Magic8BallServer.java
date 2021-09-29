@@ -9,6 +9,7 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.util.Scanner;
 
+//TODO: clean-up this class
 public class Magic8BallServer {
     //initialize socket and input stream
     private Socket socket;

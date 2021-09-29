@@ -1,4 +1,4 @@
-package nl.veurink.responsive;
+package nl.veurink.translatedwithbase;
 
 import java.util.Scanner;
 
@@ -18,10 +18,7 @@ public class Magic8Ball {
     }
 
     public static void main(String[] args) {
-        AnswerFactory answerFactory = new AnswerFactory();
-        AnswerStrategy answerStrategy = answerFactory.createAnswerStrategyBasedOnLocale();
-        
-        Magic8Ball magic8Ball = new Magic8Ball(answerStrategy);
+        Magic8Ball magic8Ball = new Magic8Ball(new EnglishAnswerStrategy());
         Scanner myObj = new Scanner(System.in);
         System.out.println(magic8Ball.getQuestion());
 

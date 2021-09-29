@@ -1,6 +1,6 @@
 package nl.veurink.translated2;
 
-import nl.veurink.translated2.AnswerStrategy;
+import nl.veurink.translatedwithbase.AnswerStrategy;
 
 public class Magic8BallAnswerStrategyMock implements AnswerStrategy {
     private String lastRequestedQuestion;

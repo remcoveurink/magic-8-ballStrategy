@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class ResponsiveStrategy implements AnswerStrategy {
-    private AnswerStrategy answerStrategy;
+    private final AnswerStrategy answerStrategy;
     private DataInputStream input;
     private DataOutputStream out;
 
