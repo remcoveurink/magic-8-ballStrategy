@@ -1,4 +1,4 @@
-package nl.veurink.responsive;
+package nl.veurink.translated2;
 
 public class DutchAnswerStrategy extends BaseAnswerStrategy {
 

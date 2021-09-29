@@ -1,4 +1,4 @@
-package nl.veurink.translated;
+package nl.veurink.translated2;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,7 +10,7 @@ public class Magic8BallTest {
         Magic8Ball magic8Ball = new Magic8Ball(answerStrategyMock);
         String question = magic8Ball.getQuestion();
         magic8Ball.handleQuestion(question);
-        int answer = answerStrategyMock.getLastRequestedAnswer();
-        Assert.assertTrue(answer > 0 && answer < 9);
+        String answer = answerStrategyMock.getLastRequestedAnswer();
+        Assert.assertEquals(question, answer);
     }
 }

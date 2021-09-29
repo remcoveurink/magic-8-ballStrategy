@@ -1,49 +1,48 @@
-package nl.veurink.responsive;
+package nl.veurink.translated2;
 
-public class DutchAnswerStrategy extends BaseAnswerStrategy {
-
+public class EnglishAnswerStrategy extends BaseAnswerStrategy {
     @Override
     public String getQuestion() {
-        return "Stel de magische 8 bal een ja/nee vraag: (druk op enter om te stoppen)";
+        return "Ask the magic 8 ball a question: (press enter to quit)";
     }
 
     @Override
     protected String getItIsCertain() {
-        return "Het is zeker";
+        return "It is certain";
     }
 
     @Override
     protected String getOutlookGood() {
-        return "Goed vooruitzicht";
+        return "Outlook good";
     }
 
     @Override
     protected String getYouMayRelyOnIt() {
-        return "Je kunt erop vertrouwen";
+        return "You may rely on it";
     }
 
     @Override
     protected String getAskAgainLater() {
-        return "Vraag later opnieuw";
+        return "Ask again later";
     }
 
     @Override
     protected String getConcentrateAndAskAgain() {
-        return "Concentreer je en vraag opnieuw";
+        return "Concentrate and ask again";
     }
 
     @Override
     protected String getReplyHazy() {
-        return "Reactie is wazig, probeer opnieuw";
+        return "Reply hazy, try again";
     }
 
     @Override
     protected String getReplyNo() {
-        return "Mijn antwoord is nee";
+        return "My reply is no";
     }
 
     @Override
     protected String getMySourceSaysNo() {
-        return "Mijn bronnen zeggen nee";
+        return "My sources say no";
     }
 }
