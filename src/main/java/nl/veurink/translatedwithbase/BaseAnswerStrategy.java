@@ -4,6 +4,9 @@ import org.w3c.dom.ranges.RangeException;
 
 import java.util.Random;
 
+/**
+ * Note: this class has template methods (template method pattern instead of strategy)
+ */
 public abstract class BaseAnswerStrategy implements AnswerStrategy {
     private final Random randomizer = new Random();
 

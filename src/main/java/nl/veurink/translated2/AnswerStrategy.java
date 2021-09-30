@@ -1,5 +1,8 @@
 package nl.veurink.translated2;
 
+/**
+ * Interface (strategy pattern), but very tight contract which is bound to be extended
+ */
 public interface AnswerStrategy {
     public String getQuestion();
     public String getItIsCertain();
