@@ -16,7 +16,7 @@ public class Magic8BallAnswerStrategyMock implements AnswerStrategy {
         return "MockedResponse";
     }
 
-    public String getLastRequestedAnswer() {
+    public String getLastRequestedQuestion() {
         return lastRequestedQuestion;
     }
 }

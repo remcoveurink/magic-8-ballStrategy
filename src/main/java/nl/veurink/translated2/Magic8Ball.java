@@ -17,7 +17,7 @@ public class Magic8Ball {
         return answerStrategy.getQuestion();
     }
 
-    public void handleQuestion(String question) {
+    public String handleQuestion(String question) {
         String answerString;
         int answer = randomizer.nextInt(8) + 1;
         switch (answer) {
@@ -48,7 +48,7 @@ public class Magic8Ball {
             default:
                 throw new RangeException((short) 8, "out of range answer: " + answer);
         }
-        System.out.println(answerString);
+        return answerString;
     }
 
     public static void main(String[] args) {
@@ -61,7 +61,7 @@ public class Magic8Ball {
             if ("".equals(question)) {
                 System.exit(0);
             }
-            magic8Ball.handleQuestion(question);
+            System.out.println(magic8Ball.handleQuestion(question));
         }
     }
 }

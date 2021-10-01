@@ -13,8 +13,8 @@ public class Magic8Ball {
         return answerStrategy.getQuestion();
     }
 
-    public void handleQuestion(String question) {
-        System.out.println(answerStrategy.getAnswer(question));
+    public String handleQuestion(String question) {
+        return answerStrategy.getAnswer(question);
     }
 
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class Magic8Ball {
             if ("".equals(question)) {
                 System.exit(0);
             }
-            magic8Ball.handleQuestion(question);
+            System.out.println(magic8Ball.handleQuestion(question));
         }
     }
 }

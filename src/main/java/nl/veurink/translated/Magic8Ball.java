@@ -15,9 +15,9 @@ public class Magic8Ball {
         return answerStrategy.getQuestion();
     }
 
-    public void handleQuestion(String question) {
+    public String handleQuestion(String question) {
         int answers = randomizer.nextInt(8) + 1;
-        System.out.println(answerStrategy.getAnswer(answers));
+        return answerStrategy.getAnswer(answers);
     }
 
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class Magic8Ball {
             if ("".equals(question)) {
                 System.exit(0);
             }
-            magic8Ball.handleQuestion(question);
+            System.out.println(magic8Ball.handleQuestion(question));
         }
     }
 }
