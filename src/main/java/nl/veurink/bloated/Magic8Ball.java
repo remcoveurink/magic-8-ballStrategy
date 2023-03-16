@@ -5,6 +5,9 @@ import org.w3c.dom.ranges.RangeException;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * context: https://nl.wikipedia.org/wiki/Magic_8-Ball
+ */
 public class Magic8Ball {
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);

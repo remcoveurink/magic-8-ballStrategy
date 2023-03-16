@@ -8,9 +8,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Magic8Ball {
-    Random randomizer = new Random();
+    private Random randomizer;
 
-    public Magic8Ball() {}
+    public Magic8Ball() {randomizer = new Random();}
 
     public String getQuestion() {
         return "Stel de magische 8 bal een ja/nee vraag: (druk op enter om te stoppen)";
