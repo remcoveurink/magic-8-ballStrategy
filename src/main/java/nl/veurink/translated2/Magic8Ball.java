@@ -3,7 +3,6 @@ package nl.veurink.translated2;
 import org.w3c.dom.ranges.RangeException;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Magic8Ball {
     private final AnswerStrategy answerStrategy;
@@ -49,19 +48,5 @@ public class Magic8Ball {
                 throw new RangeException((short) 8, "out of range answer: " + answer);
         }
         return answerString;
-    }
-
-    public static void main(String[] args) {
-        Magic8Ball magic8Ball = new Magic8Ball(new EnglishAnswerStrategy());
-        Scanner myObj = new Scanner(System.in);
-        System.out.println(magic8Ball.getQuestion());
-
-        while(true) {
-            String question = myObj.nextLine();
-            if ("".equals(question)) {
-                System.exit(0);
-            }
-            System.out.println(magic8Ball.handleQuestion(question));
-        }
     }
 }
